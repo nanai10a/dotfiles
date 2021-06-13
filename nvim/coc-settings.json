@@ -1,0 +1,15 @@
+{
+	"languageserver": {
+		"rust": {
+			"command": "rustup",
+			"args": [
+				"run",
+				"nightly",
+				"rls"
+			],
+			"filetypes": [
+				"rust"
+			]
+		}
+	}
+}

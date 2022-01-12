@@ -1,0 +1,28 @@
+{
+    "languageserver": {
+        "rust": {
+            "command": "rustup",
+            "args": [
+                "run",
+                "nightly",
+                "rls"
+            ],
+            "filetypes": [
+                "rust"
+            ]
+        },
+        "ccls": {
+            "command": "ccls",
+            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+            "rootPatterns": [".ccls", "compile_commands.json"],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "$HOME/.cache/ccls"
+                }
+            }
+        }
+    },
+    "rust-analyzer.diagnostics.disabled": ["unresolved-macro-call", "unresolved-proc-macro"],
+    "coc.source.OmniSharp.enable": true,
+    "coc.source.OmniSharp.triggerCharacters": "."
+}

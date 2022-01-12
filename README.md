@@ -1,5 +1,5 @@
 # dotfiles
-`my /..+/ (dot) files.`
+`my /\..+/ (dot) files.`
 
 ---
 

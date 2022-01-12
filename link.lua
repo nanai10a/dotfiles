@@ -31,7 +31,7 @@ local lns = function (from, to) lfs.link(from, to, true) end
 
 local is_root = eo("whoami") == "root"
 local pwd = lfs.currentdir()
-local config_dir = os.getenv("HOME") .. "/.config"
+local config_dir = os.getenv("XDG_CONFIG_HOME")
 
 -- main program
 

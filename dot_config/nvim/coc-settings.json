@@ -1,0 +1,11 @@
+{
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.diagnostics.disabled": [
+    "macro-error",
+    "unresolved-proc-macro"
+  ],
+  "diagnostic.infoSign": "👉️",
+  "diagnostic.hintSign": "💬",
+  "diagnostic.warningSign": "⚠️",
+  "diagnostic.errorSign": "❌"
+}

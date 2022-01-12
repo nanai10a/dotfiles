@@ -1,0 +1,45 @@
+# MUST required...
+[[plugins]]
+repo = "Shougo/dein.vim"
+
+# suggested plugins...
+[[plugins]]
+repo = "Shougo/neosnippet.vim"
+
+[[plugins]]
+repo = "Shougo/neosnippet-snippets"
+# ...
+
+# show `Discord Rich Presence` plugin.
+[[plugins]]
+repo = "andweeb/presence.nvim"
+
+# scroll to smooth.
+# // INFO: neovide's "--multiGrid" is same feature, so now this plugin is ignoring.
+# [[plugins]]
+# repo= "karb94/neoscroll.nvim"
+
+# show scrollbar.
+# see ":help scrollbar".
+[[plugins]]
+repo = "Xuyuanp/scrollbar.nvim"
+
+# provides comamnds and more features for Rust.
+[[plugins]]
+repo = "rust-lang/rust.vim"
+
+# provides a start screen.
+[[plugins]]
+repo = "mhinz/vim-startify"
+
+# dim background color for inactive pane.
+[[plugins]]
+repo = "blueyed/vim-diminactive"
+
+# scss syntax hightlighter.
+[[plugins]]
+repo = "cakebaker/scss-syntax.vim"
+
+# tex syntax hightlighter.
+[[plugins]]
+repo = "lervag/vimtex"

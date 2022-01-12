@@ -67,6 +67,21 @@ zinit ice wait '0'; zinit load zsh-users/zsh-autosuggestions #うっすら補完
 
 export PATH=$PATH:$HOME/.gem/ruby/3.0.0/bin
 export PATH=$PATH:$HOME/Downloads/Aseprite/build/bin
+export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/go/bin
+
+export DENO_INSTALL=$HOME/.deno
+export PATH=$PATH:$DENO_INSTALL/bin
+
+# https://wiki.archlinux.jp/index.php/環境変数
+envof() {
+  sed 's/\x0/\n/g' /proc/${1}/environ;
+}
+
+alias lg=lazygit
+alias denvm=$HOME/.cargo/bin/dvm
+alias disvm=/bin/dvm
+
+zinit ice depth=1; zinit light jeffreytse/zsh-vi-mode
 
 eval "$(starship init zsh)"
-

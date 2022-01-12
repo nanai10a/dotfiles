@@ -25,6 +25,13 @@ if vim.fn["dein#load_state"](dir) == 1 then
         lprint("plugins installed.")
     end
 
+    -- FIXME: this function requires `g:dein#install_github_api_token`
+    if vim.fn["dein#check_update"]() == 1 then
+        lprint("updating plugins...")
+        vim.fn["dein#update"]()
+        lprint("plugins updated.")
+    end
+
     if table.maxn(vim.fn["dein#check_clean"]()) >= 1 then
         -- TODO: delete unused plugins
     end

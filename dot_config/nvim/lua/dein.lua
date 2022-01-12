@@ -25,6 +25,10 @@ if vim.fn["dein#load_state"](dir) == 1 then
         lprint("plugins installed.")
     end
 
+    if table.maxn(vim.fn["dein#check_clean"]()) >= 1 then
+        -- TODO: delete unused plugins
+    end
+
     utils.dodirs("lua/dein/settings")
 end
 

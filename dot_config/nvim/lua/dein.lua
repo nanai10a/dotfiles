@@ -16,15 +16,16 @@ if vim.fn["dein#load_state"](dir) == 1 then
     vim.fn["dein#begin"](dir)
 
     utils.dodirs("lua/dein/install")
-    utils.dodirs("lua/dein/settings")
 
     vim.fn["dein#end"]()
-end
 
-if vim.fn["dein#check_install"]() == 1 then
-    lprint("installing plugins...")
-    vim.fn["dein#install"]()
-    lprint("plugin installed.")
+    if vim.fn["dein#check_install"]() ~= 0 then
+        lprint("installing plugins...")
+        vim.fn["dein#install"]()
+        lprint("plugins installed.")
+    end
+
+    utils.dodirs("lua/dein/settings")
 end
 
 lprint("configuration completed.")

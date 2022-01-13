@@ -13,7 +13,8 @@ end
 
 -- mappings
 
-nimap("<a-f>", "DocumentFormat")
+-- alternative: neoformat
+-- nimap("<a-f>", "DocumentFormat")
 nimap("<a-k>", "Hover")
 nimap("<a-r>", "References")
 nimap("<a-d>", "Definition")

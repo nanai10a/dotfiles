@@ -21,4 +21,7 @@ end
 
 -- ...end
 
+-- environment variables
+utils.dofile(".env.lua")
+
 utils.dodirs("lua")

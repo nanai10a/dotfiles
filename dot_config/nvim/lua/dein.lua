@@ -27,11 +27,12 @@ if vim.fn["dein#load_state"](dir) == 1 then
         lprint("plugins installed.")
     end
 
-    if vim.fn["dein#check_update"]() == 1 then
-        lprint("updating plugins...")
-        vim.fn["dein#update"]()
-        lprint("plugins updated.")
-    end
+    -- FIXME: too late! (using **400**ms)
+    -- if vim.fn["dein#check_update"]() == 1 then
+    --     lprint("updating plugins...")
+    --     vim.fn["dein#update"]()
+    --     lprint("plugins updated.")
+    -- end
 
     if table.maxn(vim.fn["dein#check_clean"]()) >= 1 then
         -- TODO: delete unused plugins

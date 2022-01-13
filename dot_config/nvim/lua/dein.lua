@@ -12,6 +12,8 @@ if not string.match(vim.o.runtimepath, "/dein.vim") then
     vim.o.runtimepath = vim.o.runtimepath .. "," ..  repo_dir
 end
 
+vim.g["dein#install_github_api_token"] = ENV.GITHUB_TOKEN
+
 if vim.fn["dein#load_state"](dir) == 1 then
     vim.fn["dein#begin"](dir)
 
@@ -25,7 +27,6 @@ if vim.fn["dein#load_state"](dir) == 1 then
         lprint("plugins installed.")
     end
 
-    -- FIXME: this function requires `g:dein#install_github_api_token`
     if vim.fn["dein#check_update"]() == 1 then
         lprint("updating plugins...")
         vim.fn["dein#update"]()

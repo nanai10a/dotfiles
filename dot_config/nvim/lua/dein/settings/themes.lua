@@ -1,2 +1,2 @@
-local scheme = "base16-gruvbox-dark-hard"
+local scheme = "base16-woodland"
 vim.cmd("colorscheme " .. scheme)

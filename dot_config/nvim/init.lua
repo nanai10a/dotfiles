@@ -4,7 +4,7 @@ lfs = require("lfs")
 
 utils = {}
 
-utils.configdir = vim.env.HOME .. "/.config/nvim"
+utils.configdir = vim.env.XDG_CONFIG_HOME .. "/nvim"
 
 utils.dofile = function(path)
     dofile(utils.configdir .. "/" .. path)

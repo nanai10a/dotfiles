@@ -1,12 +1,15 @@
 local map = function(mode, from, to)
     vim.api.nvim_buf_set_keymap(0, mode, from, to, {
-        noremap = true, silent = true
+        noremap = true,
+        silent = true,
     })
 end
 
 local emap = function(mode, from, to)
     vim.api.nvim_buf_set_keymap(0, mode, from, to, {
-        noremap = true, silent = true, expr = true
+        noremap = true,
+        silent = true,
+        expr = true,
     })
 end
 
@@ -78,12 +81,12 @@ autocmd BufEnter,VimEnter,BufNew,BufWinEnter,BufRead,BufCreate
 -- extensions
 
 vim.fn["defx#custom#column"]("git", "indicators", {
-  Modified = "e",
-  Staged = "+",
-  Untracked = "*",
-  Renamed = "r",
-  Unmerged = "m",
-  Ignored = "i",
-  Deleted = "x",
-  Unknown = "?"
+    Modified = "e",
+    Staged = "+",
+    Untracked = "*",
+    Renamed = "r",
+    Unmerged = "m",
+    Ignored = "i",
+    Deleted = "x",
+    Unknown = "?",
 })

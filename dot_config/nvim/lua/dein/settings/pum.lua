@@ -1,6 +1,6 @@
 -- mappings
 local map = function(from, to)
-        vim.api.nvim_set_keymap("i", from, "pum#map#" .. to, { noremap = true, expr = true })
+    vim.api.nvim_set_keymap("i", from, "pum#map#" .. to, { noremap = true, expr = true })
 end
 
 -- alternative of <tab>

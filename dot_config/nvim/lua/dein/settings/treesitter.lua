@@ -1,5 +1,12 @@
 -- local color_suffixes = {
---     "8", "9", "A", "B", "C", "D", "E", "F"
+--     "8",
+--     "9",
+--     "A",
+--     "B",
+--     "C",
+--     "D",
+--     "E",
+--     "F",
 -- }
 -- local colors = {}
 -- local termcolors = {}

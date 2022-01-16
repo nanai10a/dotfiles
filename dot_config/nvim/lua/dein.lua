@@ -1,4 +1,6 @@
-local lprint = function(s) print("[c:lua/dein] " .. s) end
+local lprint = function(s)
+    print("[c:lua/dein] " .. s)
+end
 
 local dir = vim.env.HOME .. "/.config/nvim/.dein"
 local repo_dir = dir .. "/repos/github.com/Shougo/dein.vim"
@@ -9,7 +11,7 @@ if not string.match(vim.o.runtimepath, "/dein.vim") then
         os.execute("git clone https://github.com/Shougo/dein.vim" .. " " .. repo_dir)
         lprint("dein.vim installed.")
     end
-    vim.o.runtimepath = vim.o.runtimepath .. "," ..  repo_dir
+    vim.o.runtimepath = vim.o.runtimepath .. "," .. repo_dir
 end
 
 vim.g["dein#install_github_api_token"] = ENV.GITHUB_TOKEN

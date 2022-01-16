@@ -1,5 +1,10 @@
 -- maps
-vim.api.nvim_set_keymap("i", "<tab>", [[ddc#map#pum_visible() ? '<c-n>' : (col('.') <= 1 <bar><bar> getline('.')[col('.') - 2] =~# '\s') ? '<tab>' : ddc#map#manual_complete()]], { silent = true, expr = true })
+vim.api.nvim_set_keymap(
+    "i",
+    "<tab>",
+    [[ddc#map#pum_visible() ? '<c-n>' : (col('.') <= 1 <bar><bar> getline('.')[col('.') - 2] =~# '\s') ? '<tab>' : ddc#map#manual_complete()]],
+    { silent = true, expr = true }
+)
 
 vim.api.nvim_set_keymap("i", "<s-tab>", "ddc#map#pum_visible() ? '<c-p>' : '<c-h>'", { silent = true, expr = true })
 
@@ -18,10 +23,10 @@ sp.around = { maxSize = 500 }
 so._ = {
     matchers = { "matcher_fuzzy" },
     sorters = { "sorter_fuzzy" },
-    converters = { "converter_fuzzy" }
+    converters = { "converter_fuzzy" },
 }
 fp.converter_fuzzy = {
-    hlGroup = "SpellBad"
+    hlGroup = "SpellBad",
 }
 
 -- ddc-vim-lsp
@@ -29,7 +34,7 @@ table.insert(ss, "file")
 so.file = {
     mark = "file",
     isVolatile = true,
-    forceCompletionPattern = [[\\S*/\\S*]]
+    forceCompletionPattern = [[\\S*/\\S*]],
 }
 
 -- ddc-cmdline

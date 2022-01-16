@@ -1,0 +1,3 @@
+[submodule "dot_config/alacritty/base16-alacritty"]
+	path = dot_config/alacritty/base16-alacritty
+	url = https://github.com/aarowill/base16-alacritty.git

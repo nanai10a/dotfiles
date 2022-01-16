@@ -42,6 +42,7 @@ local config_dir = os.getenv("XDG_CONFIG_HOME")
 lns(pwd .. "/dot_config/nvim", config_dir .. "/nvim")
 lns(pwd .. "/dot_config/zsh", config_dir .. "/zsh")
 lns(pwd .. "/dot_config/stylua", config_dir .. "/stylua")
+lns(pwd .. "/dot_config/alacritty", config_dir .. "/alacritty")
 
 if is_root then
     lnh(pwd .. "/root/etc/zsh/zshenv", "/etc/zsh/zshenv")

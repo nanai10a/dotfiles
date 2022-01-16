@@ -21,7 +21,8 @@ nimap("<a-d>", "Definition")
 nimap("<a-n>", "Rename")
 nimap("<a-P>", "PreviousDiagnostic")
 nimap("<a-N>", "NextDiagnostic")
-nimap("<a-s>", "SignatureHelp")
+-- unused
+-- nimap("<a-s>", "SignatureHelp")
 
 -- settings
 

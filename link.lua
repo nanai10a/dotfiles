@@ -43,6 +43,7 @@ lns(pwd .. "/dot_config/nvim", config_dir .. "/nvim")
 lns(pwd .. "/dot_config/zsh", config_dir .. "/zsh")
 lns(pwd .. "/dot_config/stylua", config_dir .. "/stylua")
 lns(pwd .. "/dot_config/alacritty", config_dir .. "/alacritty")
+lns(pwd .. "/dot_config/sway", config_dir .. "/sway")
 
 if is_root then
     lnh(pwd .. "/root/etc/zsh/zshenv", "/etc/zsh/zshenv")

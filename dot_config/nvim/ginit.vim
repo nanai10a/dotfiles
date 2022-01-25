@@ -1,5 +1,5 @@
 " fontの設定.
-GuiFont! Cica:h18
+GuiFont! JetBrainsMono Nerd Font:h14
 
 " qtのtabを無効化.
 GuiTabline 0

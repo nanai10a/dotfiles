@@ -1,0 +1,10 @@
+ignore-empty-password
+
+clock
+indicator
+
+screenshots
+effect-greyscale
+effect-vignette=0:1
+effect-blur=4x4
+fade-in=0.25

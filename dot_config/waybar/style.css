@@ -16,3 +16,112 @@
 @define-color base0E #bb90e2;
 @define-color base0F #b49368;
 
+/* specify fonts and color */
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 14px;
+  color: @base07;
+}
+
+/* reset styles */
+button {
+  padding: 0;
+}
+
+/* clear background */
+window#waybar {
+  background: none;
+}
+
+/* widgets base stylings */
+#backlight,
+#battery,
+#clock,
+#cpu,
+#idle_inhibitor,
+#memory,
+#mode,
+#network,
+#pulseaudio,
+#temperature,
+#tray,
+#window,
+#workspaces {
+  min-width: 1em;
+
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  margin-left: 4px;
+  margin-right: 4px;
+
+  border-radius: 1em;
+
+  background-color: @base02;
+}
+
+/* colorings */
+#backlight.bright,
+#idle_inhibitor.activated,
+#mode,
+#waybar.solo #window {
+  color: @base00;
+  background-color: @base07;
+}
+
+#battery.good,
+#cpu.good,
+#memory.good,
+#network.wifi,
+#network.ethernet,
+#network.linked {
+  color: @base00;
+  background-color: @base0B;
+}
+
+#battery.warning,
+#cpu.warning,
+#memory.warning {
+  color: @base00;
+  background-color: @base0A;
+}
+
+#battery.critical,
+#cpu.critical,
+#memory.critical,
+#network.disconnected,
+#workspaces button.urgent,
+#temperature.critical {
+  color: @base00;
+  background-color: @base09;
+}
+
+#clock.utc,
+#network.disabled,
+#pulseaudio.muted {
+  color: @base04;
+}
+
+#pulseaudio.bluetooth {
+  color: @base00;
+  background-color: @base0D;
+}
+
+#waybar.empty #window {
+  color: rgba(0, 0, 0, 0);
+  background: none;
+}
+
+#workspaces button.visible {
+  background-color: @base01;
+}
+
+/* buttons styling and spaces between them */
+#workspaces button {
+  padding-left: 2px;
+  padding-right: 2px;
+
+  border-radius: 1em;
+}

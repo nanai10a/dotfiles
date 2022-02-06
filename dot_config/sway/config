@@ -216,4 +216,14 @@ bar {
 exec_always fcitx5-remote
 bindsym $mod+backspace exec fcitx5-remote -t
 
+# networkmanager applet
+exec_always nm-applet --indicator
+
+# authentication daemon
+exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# wob settings
+set $wob_sock $XDG_RUNTIME_DIR/sway-wob.sock
+exec mkfifo $wob_sock && tail -f $wob_sock | wob
+
 include /etc/sway/config.d/*

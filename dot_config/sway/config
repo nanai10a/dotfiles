@@ -226,4 +226,17 @@ exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 set $wob_sock $XDG_RUNTIME_DIR/sway-wob.sock
 exec mkfifo $wob_sock && tail -f $wob_sock | wob
 
+# volume controls
+bindsym XF86AudioLowerVolume exec pamixer -d 2 && pamixer --get-volume > $wob_sock
+bindsym XF86AudioRaiseVolume exec pamixer -i 2 && pamixer --get-volume > $wob_sock
+bindsym XF86AudioMute exec pamixer -t && pamixer --get-volume > $wob_sock && ( pamixer --get-mute && echo 0 > $wob_sock ) || pamixer --get-volume > $wob_sock
+
+# screenshot bindings
+bindsym Print exec grimshot copy output
+bindsym $mod+shift+s exec grimshot copy area
+
+# backlight controls
+bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
+bindsym XF86MonBrightnessUp exec brightnessctl s 5%+
+
 include /etc/sway/config.d/*

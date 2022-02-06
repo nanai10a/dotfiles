@@ -212,4 +212,8 @@ bar {
     swaybar_command waybar
 }
 
+# input methods
+exec_always fcitx5-remote
+bindsym $mod+backspace exec fcitx5-remote -t
+
 include /etc/sway/config.d/*

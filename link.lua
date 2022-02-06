@@ -46,6 +46,7 @@ lns(pwd .. "/dot_config/alacritty", config_dir .. "/alacritty")
 lns(pwd .. "/dot_config/sway", config_dir .. "/sway")
 lns(pwd .. "/dot_config/waybar", config_dir .. "/waybar")
 lns(pwd .. "/dot_config/swaylock", config_dir .. "/swaylock")
+lns(pwd .. "/dot_config/rofi", config_dir .. "/rofi")
 
 if is_root then
     lnh(pwd .. "/root/etc/zsh/zshenv", "/etc/zsh/zshenv")

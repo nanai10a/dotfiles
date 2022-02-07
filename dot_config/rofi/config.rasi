@@ -1,6 +1,6 @@
 configuration {
 	modi: "run,drun";
-	font: "Cica 16";
+	font: "JetBrainsMono Nerd Font 14";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -147,4 +147,4 @@ configuration {
   }
 }
 
-@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+@theme "/home/nanai/.local/share/rofi/themes/base16-woodland.rasi"

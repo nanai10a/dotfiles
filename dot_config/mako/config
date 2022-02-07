@@ -1,0 +1,34 @@
+## Global Configuration
+font=JetBrainsMono Nerd Font 12
+background-color=#302b25
+width=300
+height=150
+border-size=2
+border-color=#cabcb1
+border-radius=8
+#progress-color=over #5588AAFF
+icon-location=right
+format=<b>%s</b>\n%b\n<small><i>--- %a</i></small>
+ignore-timeout=1
+
+## Criteria
+[urgency=low]
+text-color=#b7ba53
+
+[urgency=normal]
+text-color=#cabcb1
+
+[urgency=high]
+text-color=#ca7f32
+
+[actionable=true]
+border-color=#6eb958
+
+[expiring=true]
+format=<b>%s</b>\n%b\n<small><i>--- %a, expiring</i></small>
+
+[mode=default]
+invisible=0
+
+[mode=suppress]
+invisible=1

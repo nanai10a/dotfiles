@@ -241,4 +241,7 @@ bindsym $mod+shift+s exec grimshot copy area
 bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl s 5%+
 
+# notification service
+exec systemctl start --user mako
+
 include /etc/sway/config.d/*

@@ -10,6 +10,7 @@
     ],
     "modules-right": [
       "sway/mode",
+      "custom/mako",
       "tray",
       "idle_inhibitor"
     ],
@@ -47,6 +48,13 @@
       "icon-size": 20,
       "spacing": 10,
       "show-passive-items": true
+    },
+    "custom/mako": {
+      "exec": "$XDG_CONFIG_HOME/waybar/mako.status.sh",
+      "interval": 1,
+      "return-type": "json",
+      "format": "{}",
+      "on-click": "$XDG_CONFIG_HOME/waybar/mako.switch.sh"
     }
   },
   {

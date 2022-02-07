@@ -38,6 +38,7 @@ window#waybar {
 #battery,
 #clock,
 #cpu,
+#custom-mako,
 #idle_inhibitor,
 #memory,
 #mode,
@@ -64,6 +65,7 @@ window#waybar {
 
 /* colorings */
 #backlight.bright,
+#custom-mako.default,
 #idle_inhibitor.activated,
 #mode,
 #waybar.solo #window {

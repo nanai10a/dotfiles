@@ -35,7 +35,7 @@
         "(.*) — Firefox Developer Edition": " $1",
         "(.*) - Microsoft​ Edge Dev": " $1",
         "(.*) - Opera": " $1",
-        "(.*) - VLC media player": "嗢$1",
+        "(.*) - VLC media player": "嗢 $1",
         "(.*) - Discord": "ﭮ $1"
       }
     },

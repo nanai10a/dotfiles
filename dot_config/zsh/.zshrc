@@ -44,6 +44,8 @@ alias lg=lazygit
 alias denvm=$HOME/.cargo/bin/dvm
 alias disvm=/bin/dvm
 alias history-all=history -E 1
+alias cd=z
 
 # booting
+eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"

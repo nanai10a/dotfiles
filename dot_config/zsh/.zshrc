@@ -46,4 +46,4 @@ alias disvm=/bin/dvm
 alias history-all=history -E 1
 
 # booting
-eval "$(~/.cargo/bin/starship init zsh)"
+eval "$(starship init zsh)"

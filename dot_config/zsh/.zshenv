@@ -5,6 +5,7 @@ export NVM_DIR="$HOME/.nvm"
 export DENO_INSTALL=$HOME/.deno
 
 PATH=$PATH:$HOME/.gem/ruby/*/bin
+PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/.cargo/bin
 PATH=$PATH:$HOME/go/bin
 PATH=$PATH:$DENO_INSTALL/bin

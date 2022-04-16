@@ -50,6 +50,7 @@ lns(pwd .. "/dot_config/rofi", config_dir .. "/rofi")
 lns(pwd .. "/dot_config/mako", config_dir .. "/mako")
 lns(pwd .. "/dot_config/wlogout", config_dir .. "/wlogout")
 lns(pwd .. "/dot_config/splatmoji", config_dir .. "/splatmoji")
+lns(pwd .. "/dot_config/starship.toml", config_dir .. "/starship.toml")
 
 if is_root then
     lnh(pwd .. "/root/etc/zsh/zshenv", "/etc/zsh/zshenv")

@@ -245,7 +245,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl s 5%+
 
 # notification service
-exec systemctl start --user mako
+exec_always killall dunst; mako
 
 bindsym $mod+m exec splatmoji type
 

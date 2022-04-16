@@ -14,3 +14,8 @@ export PATH=$PATH:$__tmp
 unset __tmp
 
 export PATH
+
+eval "$(fnm env --use-on-cd | sd '=(.*):\$PATH' '=$$PATH:$1')"
+zshexit() {
+    rm $FNM_MULTISHELL_PATH
+}

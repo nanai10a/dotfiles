@@ -61,8 +61,7 @@ exec swayidle -w \
 # Read `man 5 sway-input` for more information about this section.
 
 input type:keyboard {
-    xkb_options caps:backspace
-    # reserved: $mod+i => fcitx5 switch input methods
+    xkb_file $XDG_CONFIG_HOME/sway/en_replaced_caps.xkb
 
     repeat_delay 300
     repeat_rate 40
@@ -216,7 +215,6 @@ bar {
 
 # input methods
 exec_always fcitx5-remote
-bindsym $mod+backspace exec fcitx5-remote -t
 
 # networkmanager applet
 exec_always nm-applet --indicator

@@ -4,7 +4,7 @@ if [[ ! -f $ZDOTDIR/.zr ]] || [[ $ZDOTDIR/.zshrc -nt $ZDOTDIR/.zr ]]; then
         zsh-users/zsh-syntax-highlighting \
         zsh-users/zsh-autosuggestions \
         jeffreytse/zsh-vi-mode \
-        > $ZDOTDIR/.zr
+        >$ZDOTDIR/.zr
 fi
 
 source $ZDOTDIR/.zr

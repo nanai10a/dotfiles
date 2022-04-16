@@ -249,4 +249,7 @@ exec_always killall dunst; mako
 
 bindsym $mod+m exec splatmoji type
 
+default_border none
+smart_borders on
+
 include /etc/sway/config.d/*

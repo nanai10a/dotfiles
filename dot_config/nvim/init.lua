@@ -1,3 +1,6 @@
+-- suppress warnings
+vim = vim
+
 -- utilities...
 
 lfs = require("lfs")

@@ -3,6 +3,8 @@ vim.o.expandtab = true
 vim.o.list = true
 vim.o.equalalways = false
 
+vim.g.loaded_perl_provider = 0
+
 vim.o.showmode = false
 
 vim.cmd("language en_US.utf8")

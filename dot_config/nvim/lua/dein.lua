@@ -23,25 +23,25 @@ if vim.fn["dein#load_state"](dir) == 1 then
 
     vim.fn["dein#end"]()
     vim.fn["dein#save_state"]()
-
-    if vim.fn["dein#check_install"]() ~= 0 then
-        lprint("installing plugins...")
-        vim.fn["dein#install"]()
-        lprint("plugins installed.")
-    end
-
-    -- FIXME: too late! (using **400**ms)
-    -- if vim.fn["dein#check_update"]() == 1 then
-    --     lprint("updating plugins...")
-    --     vim.fn["dein#update"]()
-    --     lprint("plugins updated.")
-    -- end
-
-    for _, p in ipairs(vim.fn["dein#check_clean"]()) do
-        os.execute("rm -rf " .. p)
-    end
-
-    utils.dodirs("lua/dein/settings")
 end
 
-lprint("configuration completed.")
+if vim.fn["dein#check_install"]() ~= 0 then
+    lprint("installing plugins...")
+    vim.fn["dein#install"]()
+    lprint("plugins installed.")
+end
+
+-- FIXME: too late! (using **400**ms)
+-- if vim.fn["dein#check_update"]() == 1 then
+--     lprint("updating plugins...")
+--     vim.fn["dein#update"]()
+--     lprint("plugins updated.")
+-- end
+
+for _, p in ipairs(vim.fn["dein#check_clean"]()) do
+    os.execute("rm -rf " .. p)
+end
+
+utils.dodirs("lua/dein/settings")
+
+lprint("configuration complete.")

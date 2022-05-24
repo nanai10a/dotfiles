@@ -22,6 +22,7 @@ if vim.fn["dein#load_state"](dir) == 1 then
     utils.dodirs("lua/dein/install")
 
     vim.fn["dein#end"]()
+    vim.fn["dein#save_state"]()
 
     if vim.fn["dein#check_install"]() ~= 0 then
         lprint("installing plugins...")

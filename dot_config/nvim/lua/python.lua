@@ -3,16 +3,14 @@ local lprint = function(s)
 end
 
 local install = function(mod)
-    os.execute("pip3 install --user " .. mod .. " &> /dev/null &")
+    vim.fn["asyncrun#run"]("", {}, "pip3 install --user " .. mod)
 end
 
-if vim.fn.has("python3") ~= 1 then
+if vim.g.loaded_python3_provider == 0 then
     lprint("python3 does not recognized.")
-    lprint("starting to install requiring modules with pip3...")
+    lprint("spawn for installing to required modules with pip3...")
 
     install("pynvim")
     install("send2trash")
     install("ueberzug")
-
-    lprint("installed python3 modules.")
 end

@@ -41,12 +41,13 @@ so.file = {
 table.insert(ss, "cmdline")
 so.cmdline = { mark = "cmd" }
 
--- vim-lsp
-table.insert(ss, "vim-lsp")
-so["vim-lsp"] = {
+-- ddc-nvim-lsp
+table.insert(ss, "nvim-lsp")
+so["nvim-lsp"] = {
     mark = "lsp",
     matchers = { "matcher_fuzzy" },
-    forceCompletionPattern = [[\.|:|->|"\w+/*]],
+ -- forceCompletionPattern = [[\.|:|->|"\w+/*]],
+    forceCompletionPattern = [[\.\w*|:\w*|->\w*]],
     dup = true,
     timeout = 10000,
 }

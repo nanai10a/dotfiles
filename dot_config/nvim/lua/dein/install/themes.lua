@@ -1,1 +1,1 @@
-vim.fn["dein#add"]("RRethy/nvim-base16")
+vim.fn["dein#add"]("chriskempson/base16-vim")

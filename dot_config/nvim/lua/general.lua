@@ -3,6 +3,8 @@ vim.o.expandtab = true
 vim.o.list = true
 vim.o.equalalways = false
 
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_node_provider = 0
 vim.g.loaded_perl_provider = 0
 
 vim.o.showmode = false

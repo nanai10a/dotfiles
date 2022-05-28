@@ -8,7 +8,7 @@ local repo_dir = dir .. "/repos/github.com/Shougo/dein.vim"
 if not string.match(vim.o.runtimepath, "/dein.vim") then
     if vim.fn.isdirectory(repo_dir) ~= 1 then
         lprint("dein.vim not installed, installing...")
-        os.execute("git clone https://github.com/Shougo/dein.vim" .. " " .. repo_dir)
+        vim.fn["system"]("git clone https://github.com/Shougo/dein.vim" .. " " .. repo_dir)
         lprint("dein.vim installed.")
     end
     vim.o.runtimepath = repo_dir .. "," .. vim.o.runtimepath

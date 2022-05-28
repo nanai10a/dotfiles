@@ -29,7 +29,7 @@ fp.converter_fuzzy = {
     hlGroup = "SpellBad",
 }
 
--- ddc-vim-lsp
+-- ddc-file
 table.insert(ss, "file")
 so.file = {
     mark = "file",

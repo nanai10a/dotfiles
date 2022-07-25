@@ -13,4 +13,5 @@ if vim.g.loaded_python3_provider == 0 then
     install("pynvim")
     install("send2trash")
     install("ueberzug")
+    install("greenlet")
 end

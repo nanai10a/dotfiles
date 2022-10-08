@@ -82,7 +82,6 @@ cfgs["denols"] = {
         lint = true,
         unstable = true,
     },
-    root_dir = lspcfg.util.root_pattern("deno.json", "deno.jsonc"),
 }
 
 -- filetype: dockerfile

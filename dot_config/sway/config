@@ -252,6 +252,6 @@ bindsym $mod+m exec splatmoji type
 default_border none
 smart_borders on
 
-for_window [app_id="firefoxdeveloperedition" title="Firefox Developer Edition — Sharing Indicator"] kill;
+for_window [app_id="firefoxdeveloperedition" title="Firefox Developer Edition — Sharing Indicator"] kill
 
 include /etc/sway/config.d/*

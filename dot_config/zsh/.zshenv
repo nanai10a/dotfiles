@@ -6,6 +6,7 @@ export DENO_INSTALL_ROOT=$HOME/.deno/bin
 export PNPM_HOME=$HOME/.local/share/pnpm
 
 PATH=$HOME/bin:$PATH
+PATH=$HOME/.local/bin:$PATH
 PATH=$HOME/.cargo/bin:$PATH
 PATH=$HOME/go/bin:$PATH
 PATH=$PNPM_HOME:$PATH

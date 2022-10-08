@@ -50,9 +50,6 @@ zstyle ':completion:*:approximate' max-errors 3 NUMERIC
 
 # aliasing
 alias lg=lazygit
-alias denvm=$HOME/.cargo/bin/dvm
-alias disvm=/bin/dvm
-alias history-all='history -E 1'
 alias cd=z
 alias tj='trans -tl ja'
 alias te='trans -tl en'

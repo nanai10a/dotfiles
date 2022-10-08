@@ -53,7 +53,7 @@ cfgs["bashls"] = {}
 
 -- filetype: c, cpp, objc, objcpp
 -- install: `pacman -S clang`
--- working: maybe
+-- working: roughly
 cfgs["clangd"] = {}
 
 -- filetype: cmake

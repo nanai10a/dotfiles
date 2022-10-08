@@ -6,3 +6,4 @@ require("nvim-treesitter.configs").setup({
 })
 
 require("nvim-ts-autotag").setup()
+require("hlargs").setup()

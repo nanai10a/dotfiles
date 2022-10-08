@@ -76,6 +76,7 @@ cfgs["dartls"] = {}
 
 -- filetype: javascript, javascriptreact, javascript.jsx, typescript, typescriptreact, typescript.tsx (deno)
 -- install: `pacman -S deno`
+
 cfgs["denols"] = {
     init_options = {
         enable = true,
@@ -204,15 +205,29 @@ cfgs["vimls"] = {}
 -- install: `npm i -g yaml-language-server`
 cfgs["yamlls"] = {}
 
-for k, v in pairs(cfgs) do
-    local on_attach = v.on_attach
-    v.on_attach = function()
-        if on_attach then
-            on_attach()
-        end
-
-        print("[c:dein/lsp] lsp '" .. k .. "' attached.")
+local merge = function(to, from)
+    for k, v in pairs(from) do
+        to[k] = v
     end
 
-    lspcfg[k].setup(v)
+    return to
+end
+
+local log_wrap = function(name, fn)
+    return function()
+        if fn then
+            fn()
+        end
+
+        print("[c:dein/lsp] lsp '" .. name .. "' attached.")
+    end
+end
+
+for k, v in pairs(cfgs) do
+    v.on_attach = log_wrap(k, v.on_attach)
+
+    local default = require("lspconfig.server_configurations." .. k).default_config
+    local cfg = merge(default, v)
+
+    lspcfg[k].setup(cfg)
 end

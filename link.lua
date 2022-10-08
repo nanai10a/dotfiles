@@ -36,6 +36,7 @@ end
 local is_root = eo("whoami") == "root"
 local pwd = lfs.currentdir()
 local config_dir = os.getenv("XDG_CONFIG_HOME")
+local home_dir = os.getenv("HOME")
 
 -- main program
 
@@ -51,6 +52,8 @@ lns(pwd .. "/dot_config/mako", config_dir .. "/mako")
 lns(pwd .. "/dot_config/wlogout", config_dir .. "/wlogout")
 lns(pwd .. "/dot_config/splatmoji", config_dir .. "/splatmoji")
 lns(pwd .. "/dot_config/starship.toml", config_dir .. "/starship.toml")
+
+lns(pwd .. "/dot_cargo/config.toml", home_dir .. "/.cargo/config.toml")
 
 if is_root then
     lnh(pwd .. "/root/etc/zsh/zshenv", "/etc/zsh/zshenv")

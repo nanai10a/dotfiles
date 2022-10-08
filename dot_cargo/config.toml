@@ -7,7 +7,7 @@ browser = "firefox-developer-edition"
 [cargo-new]
 vcs = "git"
 
-[target."any()"]
+[target.'cfg(all())']
 rustflags = ["-C", "target-cpu=native", "-Z", "share-generics=y"]
 
 [target.x86_64-unknown-linux-gnu]

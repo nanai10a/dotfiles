@@ -1,0 +1,37 @@
+xkb_keymap {
+    xkb_keycodes {
+        include "evdev+aliases(qwerty)"
+    };
+
+    xkb_types {
+        include "complete"
+
+        type "CUSTOM" {
+            modifiers = Shift + Mod3;
+            map[None] = Level1;
+            map[Shift] = Level2;
+            map[Mod3] = Level3;
+            level_name[Level1] = "Base";
+            level_name[Level2] = "Shift";
+            level_name[Level3] = "Hyper";
+        };
+    };
+
+    xkb_compatibility {
+        include "complete"
+    };
+
+    xkb_symbols {
+        include "pc+inet(evdev)+us"
+
+        replace key <CAPS> { [ Hyper_L ] };
+        modifier_map Mod3  { <CAPS> };
+
+        key.type = "CUSTOM";
+
+        replace key <AC06> { [ h, H, Left ] };
+        replace key <AC07> { [ j, J, Down ] };
+        replace key <AC08> { [ k, K, Up   ] };
+        replace key <AC09> { [ l, L, Right ] };
+    };
+};

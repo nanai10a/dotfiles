@@ -61,7 +61,7 @@ exec swayidle -w \
 # Read `man 5 sway-input` for more information about this section.
 
 input type:keyboard {
-    xkb_file $XDG_CONFIG_HOME/sway/en_replaced_caps.xkb
+    xkb_file $XDG_CONFIG_HOME/sway/keymap.xkb
 
     repeat_delay 300
     repeat_rate 40

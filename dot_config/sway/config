@@ -221,8 +221,6 @@ bar {
 # input methods
 exec_always fcitx5-remote
 
-# networkmanager applet
-exec_always nm-applet --indicator
 
 # authentication daemon
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

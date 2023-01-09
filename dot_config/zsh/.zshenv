@@ -21,7 +21,7 @@ unset __tmp
 
 export PATH
 
-eval "$(fnm env --use-on-cd)"
+eval "$(fnm env --shell bash --use-on-cd)"
 zshexit() {
     rm $FNM_MULTISHELL_PATH
 }

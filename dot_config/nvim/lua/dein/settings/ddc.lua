@@ -2,11 +2,11 @@
 vim.api.nvim_set_keymap(
     "i",
     "<tab>",
-    [[ddc#map#pum_visible() ? '<c-n>' : (col('.') <= 1 <bar><bar> getline('.')[col('.') - 2] =~# '\s') ? '<tab>' : ddc#map#manual_complete()]],
+    [[pum#visible() ? '<c-n>' : (col('.') <= 1 <bar><bar> getline('.')[col('.') - 2] =~# '\s') ? '<tab>' : ddc#map#manual_complete()]],
     { silent = true, expr = true }
 )
 
-vim.api.nvim_set_keymap("i", "<s-tab>", "ddc#map#pum_visible() ? '<c-p>' : '<c-h>'", { silent = true, expr = true })
+vim.api.nvim_set_keymap("i", "<s-tab>", "pum#visible() ? '<c-p>' : '<s-tab>'", { silent = true, expr = true })
 
 -- setting vars
 local ss = {}
@@ -14,34 +14,38 @@ local so = {}
 local sp = {}
 local fp = {}
 
--- ddc-around
+-- ddc-source-around
 table.insert(ss, "around")
-so.around = { mark = "around" }
-sp.around = { maxSize = 500 }
+so["around"] = {
+    mark = "around",
+}
+sp["around"] = {
+    maxSize = 1000,
+}
 
 -- ddc-fuzzy
-so._ = {
+so["_"] = {
     matchers = { "matcher_fuzzy" },
     sorters = { "sorter_fuzzy" },
     converters = { "converter_fuzzy" },
 }
-fp.converter_fuzzy = {
+fp["converter_fuzzy"] = {
     hlGroup = "SpellBad",
 }
 
--- ddc-file
-table.insert(ss, "file")
-so.file = {
-    mark = "file",
-    isVolatile = true,
-    forceCompletionPattern = [[\\S*/\\S*]],
-}
+-- -- ddc-source-file
+-- table.insert(ss, "file")
+-- so.file = {
+--     mark = "file",
+--     isVolatile = true,
+--     forceCompletionPattern = [[\\S*/\\S*]],
+-- }
 
--- ddc-cmdline
-table.insert(ss, "cmdline")
-so.cmdline = { mark = "cmd" }
+-- -- ddc-source-cmdline
+-- table.insert(ss, "cmdline")
+-- so.cmdline = { mark = "cmd" }
 
--- ddc-nvim-lsp
+-- ddc-source-nvim-lsp
 table.insert(ss, "nvim-lsp")
 so["nvim-lsp"] = {
     mark = "lsp",
@@ -54,7 +58,7 @@ so["nvim-lsp"] = {
 
 -- apply settings for ddc.vim
 vim.fn["ddc#custom#patch_global"]({
-    completionMenu = "pum.vim",
+    ui = "pum",
     backspaceCompletion = true,
     filterParams = fp,
     sources = ss,

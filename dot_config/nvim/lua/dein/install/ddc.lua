@@ -1,9 +1,14 @@
 -- base plugin
 vim.fn["dein#add"]("Shougo/ddc.vim")
 
--- extension plugins
-vim.fn["dein#add"]("Shougo/ddc-around")
+-- extension plugins (ui)
+vim.fn["dein#add"]("Shougo/ddc-ui-pum")
+
+-- extension plugins (filter)
 vim.fn["dein#add"]("tani/ddc-fuzzy")
-vim.fn["dein#add"]("LumaKernel/ddc-file")
-vim.fn["dein#add"]("Shougo/ddc-cmdline")
-vim.fn["dein#add"]("Shougo/ddc-nvim-lsp")
+
+-- extension plugins (source)
+vim.fn["dein#add"]("Shougo/ddc-source-around")
+vim.fn["dein#add"]("Shougo/ddc-source-nvim-lsp")
+-- vim.fn["dein#add"]("LumaKernel/ddc-source-file") -- FIXME: unnecessary?
+-- vim.fn["dein#add"]("Shougo/ddc-source-cmdline")  -- FIXME: unnecessary?

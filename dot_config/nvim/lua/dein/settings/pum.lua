@@ -12,8 +12,8 @@ end
 map("<c-n>", "insert_relative(+1)")
 map("<c-p>", "insert_relative(-1)")
 
-map("<pagedown>", "insert_relative(+1)")
-map("<pageup>", "insert_relative(-1)")
+-- map("<pagedown>", "insert_relative(+1)") -- FIXME: unused
+-- map("<pageup>", "insert_relative(-1)")   -- FIXME: unused
 
 map("<c-y>", "confirm()")
 map("<c-e>", "cancel()")

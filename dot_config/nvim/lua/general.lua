@@ -32,13 +32,13 @@ inoremap("<up>", "")
 inoremap("<left>", "")
 inoremap("<right>", "")
 
--- disable: unnecessary keys
-nnoremap("o", "")
-nnoremap("O", "")
-nnoremap("s", "")
-nnoremap("S", "")
-nnoremap("r", "")
-nnoremap("R", "")
+-- -- disable: unnecessary keys
+-- nnoremap("o", "")
+-- nnoremap("O", "")
+-- nnoremap("s", "")
+-- nnoremap("S", "")
+-- nnoremap("r", "")
+-- nnoremap("R", "")
 
 -- map: move window
 nnoremap("sj", "<c-w>j")
@@ -75,5 +75,6 @@ nnoremap("<c-w>s", "<cmd>tabnext<cr>")
 
 -- disable: unnecessary keys
 nnoremap("J", "")
-nnoremap("q", "")
-nnoremap("Q", "")
+nnoremap("K", "")
+-- nnoremap("q", "")
+-- nnoremap("Q", "")

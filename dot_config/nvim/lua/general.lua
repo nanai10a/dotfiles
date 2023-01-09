@@ -11,7 +11,7 @@ vim.o.showmode = false
 
 vim.cmd("language en_US.utf8")
 
-vim.cmd("command! Reload so $MYVIMRC")
+-- vim.cmd("command! Reload so $MYVIMRC")
 
 local nnoremap = function(from, to)
     vim.api.nvim_set_keymap("n", from, to, { noremap = true })

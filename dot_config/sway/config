@@ -218,9 +218,9 @@ bar {
     swaybar_command waybar
 }
 
-# input methods
-exec_always fcitx5-remote
 
+# # input methods
+# exec_always fcitx5-remote
 
 # authentication daemon
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1

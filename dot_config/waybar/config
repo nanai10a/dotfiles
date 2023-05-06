@@ -154,7 +154,7 @@
     },
     "network#wifi": {
       "interval": 2,
-      "interface": "wlan0",
+      "interface": "wlan0s",
       "format-wifi": "{icon} {essid} ({signalStrength}%)",
       "format-ethernet": "{icon} {ipaddr}/{cidr}",
       "format-linked": "{icon} {ifname} (No IP)",
@@ -166,8 +166,7 @@
         "ethernet": "",
         "linked": " ",
         "disconnected": "  "
-      },
-      "on-click": "nm-applet"
+      }
     },
     "network#eth": {
       "interval": 2,
@@ -181,8 +180,7 @@
       "format-icons": {
         "ethernet": "",
         "disconnected": " "
-      },
-      "on-click": "nm-applet"
+      }
     },
     "pulseaudio": {
       "interval": "once",

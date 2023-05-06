@@ -170,7 +170,7 @@ cfgs["rust_analyzer"] = {
 -- filetype: lua
 -- install: `pacman -S lua-language-server`
 -- working: roughly
-cfgs["sumneko_lua"] = {
+cfgs["lua_ls"] = {
     settings = {
         Lua = {
             runtime = {

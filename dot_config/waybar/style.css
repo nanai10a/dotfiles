@@ -20,7 +20,7 @@
 * {
   font-family: JetBrainsMono Nerd Font;
   font-size: 14px;
-  color: @base07;
+  color: inherit;
 }
 
 /* reset styles */
@@ -30,6 +30,7 @@ button {
 
 /* clear background */
 window#waybar {
+  color: @base07;
   background: none;
 }
 

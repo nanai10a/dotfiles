@@ -194,12 +194,6 @@ action = "DecreaseFontSize"
 key = "NumpadSubtract"
 mods = "Control"
 
-[mouse.double_click]
-threshold = 300
-
-[mouse.triple_click]
-threshold = 300
-
 [shell]
 args = ["--login"]
 program = "/bin/zsh"

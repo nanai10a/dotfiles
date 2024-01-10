@@ -1,0 +1,10 @@
+[core]
+	editor		= "nvim"
+
+[commit]
+	gpgSign		= "true"
+
+[user]
+	name		= "Nanai Jua"
+	email		= "me@n7i.dev"
+	signingkey	= "71D1E8E9DD91985D842D7FD05159CD329783A5FD"

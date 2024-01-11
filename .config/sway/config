@@ -1,0 +1,11 @@
+set $cmd Mod4
+
+bindsym $cmd+Return	exec sh -e ~/.config/sway/alacritty.sh
+bindsym $cmd+q		kill
+
+input "1452:835:Apple_Internal_Keyboard_/_Trackpad" {
+	xkb_layout	jp
+	xkb_options	caps:none
+}
+
+include /etc/sway/config.d/*

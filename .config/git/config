@@ -4,6 +4,12 @@
 [commit]
 	gpgSign		= "true"
 
+[url "ssh://git@github.com/"]
+	insteadOf	= "https://github.com/"
+	insteadOf	= "http://github.com/"
+	insteadOf	= "git://github.com/"
+
+
 [user]
 	name		= "Nanai Jua"
 	email		= "me@n7i.dev"

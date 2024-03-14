@@ -1,3 +1,7 @@
+set $ctl Control
+set $sft Shift
+
+set $opt Mod1
 set $cmd Mod4
 
 bindsym $cmd+Return	exec sh -e ~/.config/sway/alacritty.sh

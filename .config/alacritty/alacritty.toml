@@ -1,0 +1,4 @@
+[font]
+size = 12
+offset = { y = 4 }
+normal = { family = "0xProtoNerdFont" }

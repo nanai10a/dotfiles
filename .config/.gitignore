@@ -1,2 +1,6 @@
 # contains sensitive data
 /.wrangler
+
+# auto generated files by "nwg-look"
+/gtk-3.0/settings.ini
+/xsettingsd/xsettingsd.conf

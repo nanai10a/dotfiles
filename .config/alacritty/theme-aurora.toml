@@ -1,0 +1,28 @@
+# ref. https://github.com/ray-x/aurora
+
+[colors.bright]
+black   = "#5f5f87"
+blue    = "#2782d4"
+cyan    = "#54ced6"
+green   = "#9ec410"
+magenta = "#b77ee0"
+red     = "#d93234"
+white   = "#ececec"
+yellow  = "#ffbe00"
+
+[colors.normal]
+black   = "#5f5f87"
+blue    = "#2782d4"
+cyan    = "#54ced6"
+green   = "#9ec410"
+magenta = "#b77ee0"
+red     = "#d93234"
+white   = "#ececec"
+yellow  = "#ffbe00"
+
+[colors.primary]
+background = "#211c2f"
+foreground = "#daeeeb"
+
+[colors.selection]
+text = "#141425"

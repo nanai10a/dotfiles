@@ -2,5 +2,9 @@ import = ["~/.config/alacritty/theme-aurora.toml"]
 
 [font]
 size = 12
-offset = { y = 4 }
-normal = { family = "0xProtoNerdFont" }
+
+[font.offset]
+y = 4
+
+[font.normal]
+family = "0xProto"

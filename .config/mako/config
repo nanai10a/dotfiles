@@ -1,3 +1,11 @@
+## notes
+
+# firefox sends notifications with libnotify.
+# idk sending ways of other applications,
+# but highly recommend to install libnotify.
+
+## global configs
+
 # max-history=5
 # sort=-time
 
@@ -8,18 +16,18 @@
 # on-notify=none
 
 # font=monospace 10
-# background-color=#285577FF
-# text-color=#FFFFFFFF
-# width=300
-# height=100
+background-color=#211C2FFF
+text-color=#DAEEEBFF
+width=360
+height=120
 # outer-margin=0
 # margin=10
 # padding=5
 # border-size=2
-# border-color=#4C7899FF
-# border-radius=0
+border-color=#54CED6FF
+border-radius=4
 # progress-color=over #5588AAFF
-# icons=1
+icons=0
 # max-icon-size=64
 # icon-path=
 # icon-location=left
@@ -31,7 +39,28 @@
 # default-timeout=0
 # ignore-timeout=0
 # group-by=none
-# max-visible=5
+max-visible=-1
 # output=
-# layer=top
+layer=overlay
 # anchor=top-right
+
+
+
+## criteria configs
+
+[urgency=low]
+border-color=#9EC410FF
+
+[urgency=normal]
+border-color=#2782D4FF
+
+[urgency=high]
+border-color=#D93234FF
+
+## color details
+
+#                  background-color: <background>
+#                  text-color:       <foreground>
+# [urgency=low]    border-color:     <green>
+# [urgency=normal] border-color:     <blue>
+# [urgency=high]   border-color:     <red>

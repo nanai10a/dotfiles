@@ -9,7 +9,6 @@
 	insteadOf	= "http://github.com/"
 	insteadOf	= "git://github.com/"
 
-
 [user]
 	name		= "Nanai Jua"
 	email		= "me@n7i.dev"

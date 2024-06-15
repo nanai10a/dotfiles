@@ -14,3 +14,6 @@
 	name		= "Nanai Jua"
 	email		= "me@n7i.dev"
 	signingkey	= "16A08FFAE8083400980CDB56FC4D5F4576012287"
+
+[init]
+	defaultBranch = main

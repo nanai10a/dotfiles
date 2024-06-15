@@ -1,5 +1,15 @@
 # contains sensitive data
 /.wrangler
+/chromium
+/github-copilot
+/keybase
+/shuttle
+
+# contains cache files
+/Electron
+/Keybase
+/beekeeper-studio
+/chromium
 
 # auto generated files by "nwg-look"
 /gtk-3.0/settings.ini

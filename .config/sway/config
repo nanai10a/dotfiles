@@ -7,8 +7,13 @@ set $sft Shift
 set $opt Mod1
 set $cmd Mod4
 
+bindsym $cmd+$opt+q	exit
+
 bindsym $cmd+Return	exec sh -e ~/.config/sway/alacritty.sh
 bindsym $cmd+q		kill
+bindsym $cmd+r		reload
+
+bindsym $cmd+f		floating toggle
 
 input "1452:835:Apple_Internal_Keyboard_/_Trackpad" {
 	xkb_layout	jp

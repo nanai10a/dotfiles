@@ -1,3 +1,6 @@
+# if needs this, notice it depends `extra/xorg-xwayland`
+xwayland disable
+
 set $ctl Control
 set $sft Shift
 

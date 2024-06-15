@@ -1,0 +1,9 @@
+[Unit]
+Description=Appling GTK3 Settings
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/nwg-look -a
+
+[Install]
+WantedBy=default.target

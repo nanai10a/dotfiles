@@ -1,0 +1,8 @@
+[Unit]
+Description=Lightweight Notification Daemon for Wayland
+
+[Service]
+ExecStart=/usr/bin/mako
+
+[Install]
+WantedBy=default.target
